@@ -7,7 +7,7 @@
 其表达式可写为：
 
 $$
-f(\mathbf{x}) = \operatorname{sign}(\mathbf{w}^T\mathbf{x} + b)
+f(\mathbf{x}) = \mathrm{sign}(\mathbf{w}^T\mathbf{x} + b)
 $$
 
 其中：
@@ -15,7 +15,7 @@ $$
 - $\mathbf{x}$：输入特征向量
 - $\mathbf{w}$：权重参数
 - $b$：偏置
-- $\operatorname{sign}(\cdot)$：符号函数（输出类别）
+- $\mathrm{sign}(\cdot)$：符号函数（输出类别）
 
 > 直观理解：模型先给样本打一个分，再根据分数正负决定类别。
 
@@ -44,7 +44,7 @@ $$
 ### 2. Tanh 函数
 
 $$
-	anh(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}
+\mathrm{tanh}(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}}
 $$
 
 特点：
@@ -56,7 +56,7 @@ $$
 ### 3. ReLU 函数
 
 $$
-\operatorname{ReLU}(x) = \max(0, x)
+\mathrm{ReLU}(x) = \max(0, x)
 $$
 
 特点：
